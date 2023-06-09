@@ -1,3 +1,40 @@
+/* Add your custom styles here */
+
+/* Example styles */
 body {
-    background: blue;
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+    color: pink;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
 }
