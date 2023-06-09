@@ -1,11 +1,11 @@
-console.log('Script loaded successfully!');
-
-// Smooth scrolling for anchor links within the page
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
+window.addEventListener('resize', function() {
+    adjustContentWidth();
 });
+
+function adjustContentWidth() {
+    var containerWidth = document.querySelector('.container').offsetWidth;
+    var contentContainer = document.querySelector('.content-container');
+    contentContainer.style.maxWidth = containerWidth + 'px';
+}
+
+adjustContentWidth();
